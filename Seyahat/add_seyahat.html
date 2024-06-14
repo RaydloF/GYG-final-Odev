@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seyahat Ekle</title>
+    <style>
+        body {
+            background-image: url('seyahat.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .form-container h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="date"],
+        .form-container input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .form-container button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+        .form-container button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Seyahat Ekle</h2>
+        <form action="add_seyahat.php" method="post">
+            <label for="nereden">Nereden:</label>
+            <input type="text" id="nereden" name="nereden" required>
+            
+            <label for="nereye">Nereye:</label>
+            <input type="text" id="nereye" name="nereye" required>
+            
+            <label for="tarih">Tarih:</label>
+            <input type="date" id="tarih" name="tarih" required>
+            
+            <label for="saat">Saat:</label>
+            <input type="time" id="saat" name="saat" required>
+            
+            <button type="submit">Seyahat Ekle</button>
+        </form>
+    </div>
+</body>
+</html>

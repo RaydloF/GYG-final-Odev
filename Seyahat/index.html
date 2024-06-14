@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <style>
+        body {
+            background-image: url('seyahat.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button-container button {
+            padding: 15px 20px;
+            margin: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .button-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="location.href='register.html'">Kayıt Ol</button>
+        <button onclick="location.href='login.html'">Giriş Yap</button>
+       
+        <button onclick="location.href='admin_login.html'">Admin Girişi</button>
+        <button onclick="location.href='asistan_admin_giris.html'">Yardımcı Admin Girişi</button>
+       <!--<button onclick="location.href='yorumlar1.php'">Yorum Yap</button> --> 
+    </div>
+</body>
+</html>
